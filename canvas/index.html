@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="578" height="200"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+
+      var drawRect = function(x,y,width, height) {
+      var context = canvas.getContext('2d');
+      var rectWidth = width;
+      var rectHeight = height;
+
+      // translate context to center of canvas
+      context.translate(x, y);
+
+      context.fillStyle = 'blue';
+      context.fillRect(rectWidth / -2, rectHeight / -2, rectWidth, rectHeight);
+      };
+      drawRect(canvas.width/3, canvas.height/3,8*20,4*20);
+      drawRect(canvas.width/2, canvas.height/2,1*20,3*20);
+   </script>
+  </body>
+</html>
