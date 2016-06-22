@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html>
-<header>
+<head>
 <title>Attempting to trigger the reader view in Safari/Firefox</title>
+<style>
+article {border-style: dotted; border-color: #00FF00;}
+div {border-style: dashed; border-color: #0000FA;}
+aside {border-style: double; border-color: #F0F000;}
+nav {border-style: groove; border-color: #Fa0000;}
+</style>
+</head>
 <body>
   <aside>
-    <h1>Aside</h1>
+    <h1>Aside H1: Ads etc.</h1>
   </aside>
   <article class="hentry">
     <header>
-        <h1 class="entry-title">Will reader be satisfied?</h1>
-        <h2 class="entry-summary">
-          Insert semi-random text here and there to see how the reader view behaves in Safari et co.
-        </h2>
+        <h1 class="entry-title">H1 entry-title: Will reader be satisfied?</h1>
+        <div class="entry-summary">
+          DIV entry-summary: Insert semi-random text here and there to see how the reader view behaves in Safari et co. <a href="http://microformats.org/wiki/hentry">microformats</a> is relevant I think but not sure how relevant.
+        </div>
         <time class="published" datetime="2016-06-22 13:27:03+0300">
           2016-06-22
         </time>
         <p class="byline author vcard">
-            By <span class="fn">Tomas Lillqvist</span>
+            P author: By <span class="fn">Tomas Lillqvist</span>
         </p>
       </header>
 
       <div class="entry-content">
-        <h3>The missing header</h3>
+        <h3>DIV entry-content H3: The missing header</h3>
         <p>When opening the page via http(s) it works but not through file://. Also it works differently on Safari and Firefox. The page title is shown on Firefox but not on Safari. And the text "Insert semi-random text ..." is not visible on Firefox but shown on Safari.</p>
         <p>This article tries to trigger the reader view in Safari by following the instructions found here:
           <a href="https://www.readability.com/developers/guidelines#reader">Readability</a>. To avoid having very short sentences this one was added for the purpose of filling the page with text, not with fillament.</p>
         <p>In other news this is the text of the second paragraph. A second sentence was added after no reader was triggered on Firefox. Perhaps even a third sentence is needed to make the text horribly long and unreadable.</p>
         <p>A third paragraph has been added here to extend the text even further. Now there is plenty of text but no sign of the reader view as of yet.</p>
-        <h3>Another header of a lot of text</h3>
+        <h3>DIV entry-content H3: Another header of a lot of text</h3>
         <p>A lot of text will follow this little text that paves way to a lot of text. A number of letters form a sentence. The sentences follow each other to provide the bulk of the text. This article is such that the bulk of the text has no meaning other than acting as place holder text lorem ipsum.</p>
       </div>
 
       <footer>
+        <h1>footer h1: meh</h1>
         <p>
-          A version of this article appeared today.
+          A version of this article appeared today. For some reason this text doesn't make it into the reader view.
         </p>
         <div class="source-org vcard copyright">
-            Copyright 2016 <span class="org fn">No particular company.</span>
+            DIV: Copyright 2016 <span class="org fn">No particular company.</span>
         </div>
       </footer>
   </article>
   <nav>
     <ul>
-      <li><a href="">1 link to the internets</a></li>
-      <li><a href="">2 link to the internets</a></li>
-      <li><a href="">3 link to the internets</a></li>
-      <li><a href="">4 link to the internets</a></li>
+      <li><a href="">nav 1 link to the internets</a></li>
+      <li><a href="">nav 2 link to the internets</a></li>
+      <li><a href="">nav 3 link to the internets</a></li>
+      <li><a href="">nav 4 link to the internets</a></li>
   </nav>
 </body>
 </html>
