@@ -1,8 +1,50 @@
 <!DOCTYPE html>
 <html>
+<header>
+<title>Attempting to trigger the reader view in Safari/Firefox</title>
 <body>
-  <article style="height: 350px">
-    Height 350px. Removed the p tag.
+  <aside>
+    <h1>Aside</h1>
+  </aside>
+  <article class="hentry">
+    <header>
+        <h1 class="entry-title">Will reader be satisfied?</h1>
+        <h2 class="entry-summary">
+          Insert semi-random text here and there to see how the reader view behaves in Safari et co.
+        </h2>
+        <time class="published" datetime="2016-06-22 13:27:03+0300">
+          2016-06-22
+        </time>
+        <p class="byline author vcard">
+            By <span class="fn">Tomas Lillqvist</span>
+        </p>
+      </header>
+
+      <div class="entry-content">
+        <h3>The missing header</h3>
+        <p>This article tries to trigger the reader view in Safari by following the instructions found here:
+          <a href="https://www.readability.com/developers/guidelines#reader">Readability</a>. To avoid having very short sentences this one was added for the purpose of filling the page with text, not with fillament.</p>
+        <p>In other news this is the text of the second paragraph. A second sentence was added after no reader was triggered on Firefox. Perhaps even a third sentence is needed to make the text horribly long and unreadable.</p>
+        <p>A third paragraph has been added here to extend the text even further. Now there is plenty of text but no sign of the reader view as of yet.</p>
+        <h3>Another header of a lot of text</h3>
+        <p>A lot of text will follow this little text that paves way to a lot of text. A number of letters form a sentence. The sentences follow each other to provide the bulk of the text. This article is such that the bulk of the text has no meaning other than acting as place holder text lorem ipsum.</p>
+      </div>
+
+      <footer>
+        <p>
+          A version of this article appeared today.
+        </p>
+        <div class="source-org vcard copyright">
+            Copyright 2016 <span class="org fn">No particular company.</span>
+        </div>
+      </footer>
   </article>
+  <nav>
+    <ul>
+      <li><a href="">1 link to the internets</a></li>
+      <li><a href="">2 link to the internets</a></li>
+      <li><a href="">3 link to the internets</a></li>
+      <li><a href="">4 link to the internets</a></li>
+  </nav>
 </body>
 </html>
